@@ -8,7 +8,6 @@ const DisplayAll = (props) => {
                     return (
                         <div>
                             <Link to={"/" + product._id} key={product._id}>{product.title} </Link>
-                            <span>${product.price}</span>
                         </div>
                     )
                 })
