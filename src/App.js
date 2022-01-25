@@ -1,10 +1,19 @@
-import Main from './Views/Main';
+import { Switch, Route } from 'react-router-dom'
 import './App.css';
+import Main from './Views/Main';
+import Detail from './Views/Detail';
 
 function App() {
   return (
     <div className="App">
-      <Main/>
+      <Switch>
+        <Route exact path="/">
+          <Main />
+        </Route>
+        <Route path="/:id">
+          <Detail />
+        </Route>
+      </Switch>
     </div>
   );
 }
