@@ -21,15 +21,15 @@ const ProductForm = () => {
         <form onSubmit={onSubmitHandler}>
             <p>
                 <label>Title</label>
-                <input type="text" onChange={e => setProduct({ ...product, title: e.target.value })} />
+                <input type="text" onChange={e => setProduct({ ...product, title: e.target.value })} value={product.title}/>
             </p>
             <p>
                 <label>Price</label>
-                <input type="text" onChange={e => setProduct({ ...product, price: e.target.value })} />
+                <input type="text" onChange={e => setProduct({ ...product, price: e.target.value })} value={product.price}/>
             </p>
             <p>
                 <label>Description</label>
-                <input type="text" onChange={e => setProduct({ ...product, description: e.target.value })} />
+                <input type="text" onChange={e => setProduct({ ...product, description: e.target.value })} value={product.description}/>
             </p>
             <button>Add</button>
         </form>
