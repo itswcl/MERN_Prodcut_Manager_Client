@@ -20,7 +20,7 @@ const Update = (props) => {
 
     const handleUpdate = e => {
         e.preventDefault();
-        axios.put(`/api/products/update/${id}`, {
+        axios.put(`http://localhost:8000/api/products/update/${id}`, {
             title: product.title,
             price: product.price,
             description: product.description
