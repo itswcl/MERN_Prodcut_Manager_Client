@@ -7,7 +7,9 @@ const DisplayAll = (props) => {
                 props.productList.map((product, idx) => {
                     return (
                         <div>
-                            <Link to={"/" + product._id} key={product._id}>{product.title} </Link>
+                            <Link to={"/" + product._id} key={product._id}>
+                                {product.title}
+                            </Link>
                         </div>
                     )
                 })
